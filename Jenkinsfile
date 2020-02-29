@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git credentialsId: 'a156d537-8472-40e6-ae9c-ab81fe61c53c', url: 'https://github.com/thetechpush/jenkins-maven.git'
+                git credentialsId: 'a156d537-8472-40e6-ae9c-ab81fe61c53c', url: 'https://github.com/thetechpush/jenkins-maven-pipeline.git'
             }
         }
         stage('Deploy Maven') {
